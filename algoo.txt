@@ -1,0 +1,19 @@
+Algorithme Phrase ;
+Var PH :chaine ;
+T,NBC,NBM,NBV,I: entier;
+Debut
+  Ecrire ('Donner une phrase');
+  lire('PH') ;
+  NBC<-0; NBM<-0;NBV<-0; I<-1;
+  Tantque I<=N
+  Faire Si PH[I]=''
+  Alors I<-I+1
+  Sinon Tantque (I<=N)et(PH[I]<#'')et(PH[I]#'')
+  Faire NBC<-NBC+1 ; I<-I+1; Fait;
+  NBM<-NBM+1 ;
+  si PH[I]='' Alors NBV<-NBV+1  Finsi;
+  Finsi;
+  Fait;
+  Ecrire('Nombre de caractére:,'NBC' 'Nombre de MOT:,'NBM'  'Nombre de valeur:,'NBV');
+  FIN
+
